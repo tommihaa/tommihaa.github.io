@@ -1,0 +1,262 @@
+/* Portfolio, tommihaa.github.io
+   Yksi tiedosto, ei buildia, ei webfontteja. Järjestelmäfontit tarkoittavat
+   ettei sivu tee yhtään ulkoista pyyntöä. */
+
+:root {
+  --bg: #f7f5f0;
+  --surface: #fffdf9;
+  --text: #1e1c19;
+  --text-dim: #55504a;
+  --border: #ddd6c9;
+  --accent: #8a3d16;
+  --accent-soft: #f0e6dc;
+  --radius: 10px;
+  --measure: 34rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1a1917;
+    --surface: #232120;
+    --text: #ece8e1;
+    --text-dim: #aaa39a;
+    --border: #3a3733;
+    --accent: #e09a63;
+    --accent-soft: #2d2723;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0 1.25rem 4rem;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+main,
+header,
+footer {
+  max-width: 46rem;
+  margin: 0 auto;
+}
+
+a {
+  color: var(--accent);
+  text-underline-offset: 0.15em;
+}
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+/* Kärki */
+
+.hero {
+  padding: 3.5rem 0 2.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 0.85rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.hero h1 {
+  margin: 0.3rem 0 0.9rem;
+  font-size: clamp(2rem, 6vw, 2.8rem);
+  line-height: 1.15;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+
+.lede {
+  margin: 0;
+  max-width: var(--measure);
+  font-size: 1.1rem;
+  color: var(--text-dim);
+}
+
+/* Osiot */
+
+section {
+  padding: 2.75rem 0 0.5rem;
+}
+
+h2 {
+  margin: 0 0 0.4rem;
+  font-size: 1.5rem;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+
+.section-lede {
+  margin: 0 0 1.5rem;
+  max-width: var(--measure);
+  color: var(--text-dim);
+}
+
+/* Väitteet ja todisteet */
+
+.claims {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: claim;
+}
+
+.claims > li {
+  counter-increment: claim;
+  padding: 1.1rem 0 1.1rem 2.6rem;
+  border-top: 1px solid var(--border);
+  position: relative;
+}
+
+.claims > li::before {
+  content: counter(claim);
+  position: absolute;
+  left: 0;
+  top: 1.15rem;
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.claims h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.05rem;
+  font-weight: 650;
+}
+
+.claims p {
+  margin: 0;
+  color: var(--text-dim);
+}
+
+/* Claude Code -kappale */
+
+.disclosure {
+  margin: 2rem 0 0;
+  padding: 1.25rem 1.4rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  color: var(--text-dim);
+}
+
+/* Korttiruudukko */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.3rem 1.4rem;
+}
+
+.card h3 {
+  margin: 0 0 0.3rem;
+  font-size: 1.15rem;
+  font-weight: 650;
+}
+
+.what {
+  margin: 0 0 0.6rem;
+  color: var(--text);
+}
+
+.stack {
+  margin: 0 0 0.9rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  color: var(--text-dim);
+}
+
+.facts {
+  margin: 0 0 1rem;
+  padding-left: 1.1rem;
+  color: var(--text-dim);
+  font-size: 0.95rem;
+}
+
+.facts li {
+  margin-bottom: 0.45rem;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+}
+
+.links a {
+  display: inline-block;
+  padding: 0.3rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.links a:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.subhead {
+  margin: 2rem 0 0.9rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  font-weight: 650;
+}
+
+/* Tausta ja yhteys */
+
+section p {
+  max-width: var(--measure);
+}
+
+.contact {
+  margin-top: 1.2rem;
+  font-size: 1.15rem;
+}
+
+/* Alatunniste */
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+footer p {
+  margin: 0;
+  max-width: var(--measure);
+  font-size: 0.92rem;
+  color: var(--text-dim);
+}
