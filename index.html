@@ -4,61 +4,174 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tommi Haanranta</title>
-    <meta name="description" content="Tommi Haanranta, ohjelmistokehittäjä." />
-    <meta name="theme-color" content="#f7f5f0" />
+    <meta
+      name="description"
+      content="Ohjelmistokehittäjä. Teen selaimessa ja puhelimessa toimivia sovelluksia, ja testaan ne ennen kuin väitän niistä mitään. Etsin töitä."
+    />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#f7f5f0" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1a1917" media="(prefers-color-scheme: dark)" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <style>
-      :root {
-        --bg: #f7f5f0;
-        --text: #1e1c19;
-        --text-dim: #55504a;
-        --accent: #8a3d16;
-      }
-      @media (prefers-color-scheme: dark) {
-        :root {
-          --bg: #1a1917;
-          --text: #ece8e1;
-          --text-dim: #aaa39a;
-          --accent: #e09a63;
-        }
-      }
-      body {
-        margin: 0;
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 2rem 1.25rem;
-        background: var(--bg);
-        color: var(--text);
-        font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
-        font-size: 17px;
-        line-height: 1.6;
-      }
-      main {
-        max-width: 30rem;
-      }
-      h1 {
-        margin: 0 0 0.5rem;
-        font-size: clamp(1.8rem, 6vw, 2.4rem);
-        font-weight: 650;
-        letter-spacing: -0.01em;
-      }
-      p {
-        margin: 0 0 1.25rem;
-        color: var(--text-dim);
-      }
-      a {
-        color: var(--accent);
-        text-underline-offset: 0.15em;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Tommi Haanranta" />
+    <meta
+      property="og:description"
+      content="Ohjelmistokehittäjä. Teen selaimessa ja puhelimessa toimivia sovelluksia. Etsin töitä."
+    />
+    <meta property="og:url" content="https://tommihaa.github.io/" />
+    <meta property="og:locale" content="fi_FI" />
+    <meta name="twitter:card" content="summary" />
   </head>
   <body>
-    <main>
+    <header class="hero">
+      <p class="eyebrow">Ohjelmistokehittäjä</p>
       <h1>Tommi Haanranta</h1>
-      <p>Ohjelmistokehittäjä. Laajempi esittely tulee tähän osoitteeseen.</p>
-      <p><a href="mailto:no.jopas@gmail.com">no.jopas@gmail.com</a></p>
+      <p class="lede">
+        Teen sovelluksia selaimeen ja puhelimeen. Alla on viisi projektia, joista kolmea voi
+        kokeilla ja koodia katselmoida heti. Etsin töitä enkä nirsoile. Ota yhteyttä.
+      </p>
+    </header>
+
+    <main>
+      <section aria-labelledby="tyot">
+        <h2 id="tyot">Työt</h2>
+        <p class="section-lede">
+          Nämä kolme ovat verkossa, ilmaisia ja mainoksettomia. Klikkaa ja kokeile.
+        </p>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Korttipeli-kokoelma</h3>
+            <p class="what">Yhdeksän suomalaista korttipeliä selaimessa, tietokonevastustajilla.</p>
+            <p class="stack">React · JavaScript · Vite · Vercel</p>
+            <ul class="facts">
+              <li>Peli avautuu käyttäjän omalla kielellä, 23 kieltä samassa versiossa</li>
+              <li>Tietokonevastustajien tasot on mitattu antamalla koneen pelata itseään vastaan, 400 peliä kutakin tasoparia kohden</li>
+              <li>Mittaus näytti, että kahdessa pelissä tason valinta ei muuta lopputulosta. Se kerrotaan pelaajalle sen sijaan että luvattaisiin ero jota ei ole</li>
+            </ul>
+            <p class="links">
+              <a href="https://tommi-jako.vercel.app">Kokeile</a>
+              <a href="https://github.com/tommihaa/Korttipeli-kokoelma/blob/main/docs/BOTBENCH.md">Mittaustulokset</a>
+              <a href="https://github.com/tommihaa/Korttipeli-kokoelma">Koodi</a>
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Itu</h3>
+            <p class="what">Suomenkielinen sananmuodostuspeli. Toimii ilman nettiyhteyttä.</p>
+            <p class="stack">TypeScript · Vite · Vercel</p>
+            <ul class="facts">
+              <li>Koko suomen kielen sanasto, 2 314 988 sanamuotoa, pakattuna niin että se mahtuu selaimeen eikä tarvitse palvelinta</li>
+              <li>119 automaattista testiä pitävät pisteytyksen ja sanantarkistuksen kurissa</li>
+              <li>Ei käytä yhtään ulkopuolista koodikirjastoa, joten peli ei mene rikki toisen tekemästä päivityksestä</li>
+            </ul>
+            <p class="links">
+              <a href="https://tommi-itu.vercel.app">Kokeile</a>
+              <a href="https://github.com/tommihaa/Itu">Koodi</a>
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Superjatsi</h3>
+            <p class="what">Noppapeli viidellä tai kuudella nopalla.</p>
+            <p class="stack">Web Components · TypeScript · Vercel</p>
+            <ul class="facts">
+              <li>103 automaattista testiä, joista kaksi pelaa 500 peliä läpi ja tarkistaa etteivät pistesäännöt riitele keskenään</li>
+              <li>Rakennettu selaimen omilla työkaluilla ilman käyttöliittymäkirjastoa</li>
+            </ul>
+            <p class="links">
+              <a href="https://tommi-superjatsi.vercel.app">Kokeile</a>
+              <a href="https://github.com/tommihaa/Superjatsi">Koodi</a>
+            </p>
+          </article>
+        </div>
+
+        <h3 class="subhead">Nämä eivät ole julkisia, ja kerron miksi</h3>
+        <div class="grid">
+          <article class="card">
+            <h3>Pokerilabra</h3>
+            <p class="what">Komentorivityökalu pelattujen pokerikäsien jälkianalyysiin.</p>
+            <p class="stack">Python</p>
+            <ul class="facts">
+              <li>Korttikäsien vertailu kirjoitettiin itse, koska valmis kirjasto vei 35,7 sekuntia ja vaatimus oli alle 5. Oma versio vie noin 0,4 sekuntia, ja testi pitää huolen ettei se hidastu</li>
+              <li>Oikealla turnausaineistolla 258 kättä 258:sta luettiin oikein ja 236 lopputulosta 236:sta täsmäsi</li>
+              <li>Ei julkinen, koska aineisto on muiden pelaajien pelihistoriaa eikä minun jaettavaani</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>DG Android</h3>
+            <p class="what">Android-sovellus DailyGammon-backgammonpalveluun.</p>
+            <p class="stack">Kotlin · Jetpack Compose</p>
+            <ul class="facts">
+              <li>Kolme osaa viidestä on kirjoitettu niin, että ne voi testata ilman puhelinta tai emulaattoria</li>
+              <li>Viestit säilyvät puhelimessa, joten katkennut yhteys ei vie keskustelua mukanaan</li>
+              <li>Ei julkinen ennen kuin olen puhunut palvelun ylläpidon kanssa. Ulkopuolinen sovellus kuormittaa palvelua, ja siitä sovitaan etukäteen</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="tapa">
+        <h2 id="tapa">Miten työskentelen</h2>
+        <ul class="facts">
+          <li><strong>Mittaan ennen kuin väitän.</strong> Ensimmäinen 30 pelin koe näytti korttipeleissä kolme selvää vaikeustasoa. Isompi 400 pelin koe kumosi sen, joten en luvannut ominaisuutta jota ei ollut.</li>
+          <li><strong>Kerron myös sen mikä ei toiminut.</strong> Nollatulos on tieto siinä missä onnistuminen, ja sen piilottaminen tulee myöhemmin kalliimmaksi.</li>
+          <li><strong>Otan ulkopuolista koodia mukaan vain kun se kannattaa.</strong> Jokainen kirjasto on lupaus jonka joku muu voi rikkoa päivityksellä, joten harkitsen sen erikseen.</li>
+          <li><strong>Sanon mistä tieto on peräisin.</strong> Jos en tiedä, jätän kohdan tyhjäksi enkä arvaa.</li>
+          <li><strong>Vähennän häviötä viestinnässä.</strong> Mitä tarkemmin sanon mitä tarkoitan, sitä vähemmän jää tilaa arvaukselle. Se koskee määrittelyä, nimeämistä ja tekoälyn ohjaamista samalla tavalla.</li>
+        </ul>
+
+        <p class="disclosure">
+          Kirjoitan nämä projektit Claude Codella. Tekoäly tuottaa koodia ja kääntää tekstit,
+          minä päätän mitä rakennetaan, miten se rakennetaan ja mikä jätetään tekemättä. Jos
+          mietit kestääkö näin tehty työ tarkastelun, älä usko minua vaan katso itse:
+          <a href="https://github.com/tommihaa/Korttipeli-kokoelma/blob/main/docs/BOTBENCH.md"
+            >mittauspöytäkirja</a
+          >
+          kertoo jokaisesta kokeesta mitä testattiin, kuinka monta kertaa ja mitä siitä seurasi.
+        </p>
+
+        <p class="disclosure">
+          Työskentelen tekoälyn kanssa suomeksi, vaikka se osaa englantia paremmin. Syy on
+          käytännöllinen: sanon suomeksi tarkemmin mitä tarkoitan. Mitä vähemmän tarkoituksesta
+          katoaa matkalla, sitä vähemmän jää tilaa arvaukselle, ja arvaus on juuri se kohta jossa
+          tekoäly menee vikaan. Väärinymmärrys maksaa aina enemmän kuin kielivalinta säästää.
+        </p>
+      </section>
+
+      <section aria-labelledby="tausta">
+        <h2 id="tausta">Tausta</h2>
+        <p>
+          Ohjelmoinut 11 vuotta, eniten Javalla. AI Bootcamp (Saranen) 2024. Sitä ennen
+          prosessinhoitajan tutkinto 2013 ja 2014.
+        </p>
+        <p>
+          Prosessityöstä jäi tapa jota käytän edelleen: virhe selvitetään loppuun asti ennen kuin
+          laitos käynnistetään uudelleen, eikä arvaus kelpaa selitykseksi. Sama toimii koodissa.
+        </p>
+      </section>
+
+      <section aria-labelledby="yhteys">
+        <h2 id="yhteys">Yhteystiedot</h2>
+        <p>
+          Otan mielelläni vastaan yhteydenottoja ja työtarjouksia. Kerro vapaamuotoisesti mitä
+          olisi tarjolla, niin vastaan.
+        </p>
+        <p class="contact">
+          <a href="mailto:no.jopas@gmail.com">no.jopas@gmail.com</a>
+        </p>
+      </section>
     </main>
+
+    <footer>
+      <p>
+        Tämä sivu on tehty käsin: yksi HTML-tiedosto ja yksi tyylitiedosto. Ei koontityökaluja,
+        ei JavaScriptiä, ei ulkopuolisia palveluita.
+        <a href="https://github.com/tommihaa/tommihaa.github.io">Sivun koodi</a>
+        on luettavissa kokonaan.
+      </p>
+    </footer>
   </body>
 </html>

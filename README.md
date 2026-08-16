@@ -1,11 +1,10 @@
 # tommihaa.github.io
 
-Henkilökohtainen sivu, näkyy osoitteessa <https://tommihaa.github.io/>.
+Henkilökohtainen portfolio-sivu, näkyy osoitteessa <https://tommihaa.github.io/>.
 
-Yksi tiedosto, käsin kirjoitettu `index.html`. Ei buildia, ei JavaScriptiä, ei
-riippuvuuksia eikä ulkoisia pyyntöjä.
-
-Nykyinen sisältö on väliaikainen: nimi ja yhteystieto. Laajempi esittely on tekeillä.
+Yksi sivu, käsin kirjoitettu: `index.html` ja `styles.css`. Ei buildia, ei JavaScriptiä,
+ei riippuvuuksia eikä ulkoisia pyyntöjä. Sivun ensimmäinen väite on että riippuvuus on
+velka, joten build-putki kumoaisi sen ennen ensimmäistä projektia.
 
 `.nojekyll` estää Jekyll-käsittelyn, joka muuten ajettaisiin oletuksena ja toisi
 templaattimoottorin ilman että sitä valittiin.
