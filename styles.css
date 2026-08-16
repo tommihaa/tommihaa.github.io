@@ -151,6 +151,9 @@ h2 {
 /* Claude Code -kappale */
 
 .disclosure {
+  /* Kumoaa `section p`:n lukumitan: laatikko on rajattu pinta eikä leipäteksti,
+     joten se noudattaa ympäröivän sisällön leveyttä eikä kapeampaa palstaa. */
+  max-width: none;
   margin: 2rem 0 0;
   padding: 1.25rem 1.4rem;
   background: var(--surface);
