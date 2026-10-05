@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DG Android, closed test</title>
+<meta name="description" content="An unofficial DailyGammon client for Android, looking for testers on Google Play.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --text: #1d1a16;
+    --bg: #faf7f1;
+    --muted: #5d564b;
+    --link: #8a3b12;
+    --rule: #e2dbcd;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text: #e6e1d8;
+      --bg: #17150f;
+      --muted: #a9a195;
+      --link: #f0a46c;
+      --rule: #34302a;
+    }
+  }
+  body {
+    margin: 0 auto;
+    max-width: 38rem;
+    padding: 2rem 1rem 4rem;
+    font: 17px/1.55 Georgia, "Times New Roman", serif;
+    color: var(--text);
+    background: var(--bg);
+    overflow-wrap: break-word;
+  }
+  a { color: var(--link); }
+  h1 { font-size: 1.7rem; line-height: 1.2; margin: 0 0 .25rem; }
+  h2 { font-size: 1.15rem; margin: 2rem 0 .5rem; }
+  p, li { margin: 0 0 .75rem; }
+  ul, ol { padding-left: 1.25rem; }
+  .meta { color: var(--muted); margin-bottom: 1.5rem; }
+  footer { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid var(--rule); color: var(--muted); }
+</style>
+</head>
+<body>
+
+<h1>DG Android</h1>
+<p class="meta">An unofficial DailyGammon client for Android<br>Closed test on Google Play, October 2026</p>
+
+<p>DG Android is a free app for playing on dailygammon.com from an Android phone or tablet. Before Google lets a new developer publish, an app has to run for a while in a closed test with real testers. That is where it is now. If you play DailyGammon on Android, you can be one of them: use the app instead of the browser for a couple of weeks and say what is missing.</p>
+
+<h2>Why it exists</h2>
+<p>DailyGammon does not save match messages. Once you have read one on the site, it is gone. The app saves both sides of the chat on your device before showing it, so the conversation stays with you. The archive can be exported to a plain text file, backed up to a file and imported again.</p>
+<p>It also survives losing the connection. A cold start in airplane mode opens signed in, and a loaded board stays as it was.</p>
+
+<h2>What it does</h2>
+<ul>
+  <li>Board play: local move assembly, undo without the network, swap dice, skip game, the cube, the site's own confirmation settings and a confirmation for Beaver in money games. Arrows for your move and the opponent's last move if you switch them on.</li>
+  <li>Your own DailyGammon settings, editable in the same form the site has. The board follows your board scheme, or one of the app's own looks if you pick one, four wooden boards among them.</li>
+  <li>Notes to yourself for each game, and positions you mark while playing. A finished match can be shared as an .sgf file for GNU Backgammon or BGBlitz with your marks as comments.</li>
+  <li>Match list you can sort, your tournaments with the round and the opponent, forum, lounge, tournament hall, player list and profiles.</li>
+  <li>An optional fingerprint or PIN lock when the app starts.</li>
+</ul>
+
+<h2>What it does not do, on purpose</h2>
+<ul>
+  <li>No background polling and no notifications. It fetches nothing unless you ask it to, one page at a time, never more than one request a second. The site's admin knew about the app before it was offered to anyone.</li>
+  <li>No ads, no payments, no analytics. It is free and will stay that way.</li>
+  <li>No analysis and no bots. Anything a browser already does well belongs in the browser.</li>
+</ul>
+
+<h2>Before you install</h2>
+<p>You need a DailyGammon account. The app cannot create one, but <a href="http://www.dailygammon.com/">dailygammon.com</a> can, for free.</p>
+<p>The archive lives on the device where you take the message. A message read in the browser or another app is gone from the site before this app sees it. Two devices running this app can merge their archives with Import.</p>
+
+<h2>How to join</h2>
+<ol>
+  <li>Join the <a href="https://groups.google.com/g/dg-android-testers">DG Android testers</a> Google group with the Google account you use on your Android device.</li>
+  <li>On the device, open the <a href="https://play.google.com/apps/testing/fi.tommi.dg">test invitation</a> and accept it.</li>
+  <li>Install from the Play Store link the invitation gives you. If there is no Install button yet, try again later. Google can take from a few minutes to a few hours to register a new tester.</li>
+</ol>
+<p>The group is also where the testers talk. Bugs, missing things and questions go there, where everyone sees what has already been reported and a post can be edited later. The member list is hidden; others see only what you post.</p>
+
+<h2>What the invitation page means</h2>
+<p>Google's invitation page says that certain data on your use of the app is shared with the developer. That is Google's standard text for every test. Through Google Play I see crash reports, install counts by device model and any feedback you send from the store page. The app itself sends me nothing. It talks only to dailygammon.com, the way your browser does.</p>
+
+<h2>Source and privacy</h2>
+<p>The source code is public under GPL-3: <a href="https://github.com/tommihaa/dg-android">github.com/tommihaa/dg-android</a>. What the app stores and where it goes is in the <a href="https://tommihaa.github.io/dg-android-privacy/">privacy policy</a>.</p>
+
+<footer>
+  <p>Made by Tommi (tommih on DailyGammon) with Claude Code. DG Android is not affiliated with DailyGammon or its operators.</p>
+</footer>
+
+</body>
+</html>
