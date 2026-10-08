@@ -6,7 +6,7 @@
     <title>Tommi Haanranta</title>
     <meta
       name="description"
-      content="Kolme selainpeliä tuotannossa. Claude Code kirjoittaa koodin, minä valitsen mitä rakennetaan, kirjoitan säännöt sanoiksi ja hylkään sen mitä ei pystytä todentamaan. Java-tausta Logicalta. Etsin töitä."
+      content="Kolme selainpeliä tuotannossa. Claude Code kirjoittaa koodin, minä valitsen mitä rakennetaan, kirjoitan säännöt sanoiksi ja hylkään sen mitä ei pystytä todentamaan. Java-tausta."
     />
     <meta name="color-scheme" content="light dark" />
     <meta name="theme-color" content="#f7f5f0" media="(prefers-color-scheme: light)" />
@@ -17,7 +17,7 @@
     <meta property="og:title" content="Tommi Haanranta" />
     <meta
       property="og:description"
-      content="Kolme selainpeliä tuotannossa, rakennettu Claude Codella. Java-tausta Logicalta. Etsin töitä."
+      content="Kolme selainpeliä tuotannossa, rakennettu Claude Codella. Java-tausta."
     />
     <meta property="og:url" content="https://tommihaa.github.io/" />
     <meta property="og:locale" content="fi_FI" />
@@ -31,25 +31,25 @@
         Kolme selainpeliä tuotannossa: suomalaiset korttipelit, sananmuodostus ja jatsi.
         Claude Code kirjoittaa koodin. Minä valitsen mitä rakennetaan ja mitä ei, kirjoitan
         säännöt sanoiksi, luen jokaisen muutoksen ja hylkään sen mitä ei pystytä todentamaan.
-        Yksitoista vuotta Logicalla Java-kehittäjänä. Etsin töitä. Ota yhteyttä.
-      </p>
+     </p>
     </header>
 
     <main>
       <section aria-labelledby="tyot">
         <h2 id="tyot">Työt</h2>
         <p class="section-lede">
-          Kolme ensimmäistä ovat verkossa, ilmaisia ja mainoksettomia. Klikkaa ja kokeile.
-          Neljännestä on koodi luettavissa, sovellus ei ole vielä jaossa.
+          Pelit on opittu pöydän ääressä pelaten. Koen pelikulttuurin säilyttämisen arvoiseksi, joten aloitin ja projektit pääsivät maaliin. Nyt niitä saavat opetella ja pelata myös porukat, joilla ei ole ketään selittämässä
+          sääntöjä. Kolme ensimmäistä ovat verkossa, ilmaisia ja mainoksettomia. Klikkaa ja kokeile.
+          DG Android -sovellus on ladattavissa testaajille.
         </p>
 
         <div class="grid">
           <article class="card">
             <h3>Jako</h3>
             <p class="what">Yhdeksän suomalaista korttipeliä selaimessa, tietokonevastustajilla.</p>
+            <p class="why">Viisi yhdeksästä opin porukassa jossa pelattiin joka päivä, loput lapsena ja opiskelukaverilta. Korttipelien rikkaus on paikallisissa säännöissä, joten pelissä ei ole yhtä oikeaa muotoa vaan valittavia muunnelmia. Vakioasetus on valittu pelattavuuden mukaan.</p>
             <p class="stack">React · JavaScript · Vite · Vercel</p>
             <ul class="facts">
-              <li>Peli avautuu käyttäjän omalla kielellä, 23 kieltä samassa versiossa</li>
               <li>Tietokonevastustajien tasot on mitattu antamalla koneen pelata itseään vastaan, 400 peliä kutakin tasoparia kohden</li>
               <li>Mittaus näytti, että kahdessa pelissä tason valinta ei muuta lopputulosta. Se kerrotaan pelaajalle sen sijaan että luvattaisiin ero jota ei ole</li>
             </ul>
@@ -63,11 +63,11 @@
           <article class="card">
             <h3>Itu</h3>
             <p class="what">Suomenkielinen sananmuodostuspeli. Toimii ilman nettiyhteyttä.</p>
+            <p class="why">Esikuva on kirjainnoppapeli, jota pelattiin tiimalasissa valuvan hiekan mitatessa vuoron pituutta. Itu antaa lisäpisteitä, jos lähes kaikki kirjaimet on käytetty ennen määräaikaa. Pöydässä ei ollut sanakirjaa, vaan kelpoisuus ratkesi yhteisellä kielitajulla. Yksin pelatessa kiistan toista osapuolta ei ole, joten Itussa tuomarina on Kotuksen sanalista.</p>
             <p class="stack">TypeScript · Vite · Vercel</p>
             <ul class="facts">
-              <li>Sanasto on Kotuksen nykysuomen sanalista taivutusmuotoineen, pakattuna niin että se mahtuu selaimeen eikä tarvitse palvelinta</li>
+              <li>Sanalista taivutusmuotoineen on pakattu niin, että se mahtuu selaimeen eikä tarvitse palvelinta</li>
               <li>Pisteytys, sanantarkistus ja sanaston pakkaus on katettu automaattisilla testeillä, ja ne ajetaan automaattisesti ennen kuin muutos tallennetaan</li>
-              <li>Ei käytä yhtään ulkopuolista koodikirjastoa, joten peli ei mene rikki toisen tekemästä päivityksestä</li>
             </ul>
             <p class="links">
               <a href="https://tommi-itu.vercel.app">Kokeile</a>
@@ -78,10 +78,10 @@
           <article class="card">
             <h3>Superjatsi</h3>
             <p class="what">Noppapeli viidellä tai kuudella nopalla.</p>
+            <p class="why">Jatsin moniottelijalle. Kuudella nopalla pelataan pöydässä harvoin ja nyt sitä saa. Yksi peli kestää noin 20 minuuttia.</p>
             <p class="stack">Web Components · TypeScript · Vercel</p>
             <ul class="facts">
               <li>Pistesäännöt on katettu automaattisilla testeillä, ja kaksi niistä pelaa 500 peliä läpi ja tarkistaa etteivät säännöt riitele keskenään</li>
-              <li>Peli avautuu suomeksi, ruotsiksi tai englanniksi selaimen kielen mukaan</li>
               <li>Rakennettu selaimen omilla työkaluilla ilman käyttöliittymäkirjastoa</li>
             </ul>
             <p class="links">
@@ -93,11 +93,10 @@
           <article class="card">
             <h3>DG Android</h3>
             <p class="what">Android-sovellus DailyGammon-backgammonpalveluun.</p>
+            <p class="why">DailyGammonissa ei pelata kelloa vastaan: siirtoon on aikaa päiviä ja turnaus voi kestää vuosia. Sovellus on tehty tälle rytmille. Se muistuttaa odottavista siirroista ja säilyttää ottelun keskustelun, jonka palvelu hävittää heti kun viesti on luettu.</p>
             <p class="stack">Kotlin · Jetpack Compose</p>
             <ul class="facts">
               <li>Palvelun sivujen lukeminen on erotettu sovelluksesta omaksi osakseen, joten se testataan tallennettuja sivuja vasten ilman puhelinta tai emulaattoria</li>
-              <li>Palvelu ei säilytä otteluiden viestejä, joten sovellus tallentaa keskustelun puhelimeen ennen kuin näyttää sen</li>
-              <li>Suljetussa testissä Google Playssa lokakuusta 2026. Ylläpito tiesi sovelluksesta ennen kuin sitä tarjottiin kenellekään, koska ulkopuolinen sovellus kuormittaa palvelua</li>
             </ul>
             <p class="links">
               <a href="https://tommihaa.github.io/dg-android/">Liity testiin</a>
@@ -133,24 +132,9 @@
         </p>
 
         <p class="disclosure">
-          Työskentelen tekoälyn kanssa suomeksi, vaikka se osaa englantia paremmin. Syy on
-          käytännöllinen: luen, ymmärrän ja tuotan suomeksi tavattomasti tarkempaa kieltä kuin
-          englanniksi. Mitä vähemmän tarkoituksesta
-          katoaa matkalla, sitä vähemmän jää tilaa arvaukselle, ja arvaus on juuri se kohta jossa
+          Työskentelen tekoälyn kanssa fingelskaksi. Syy alkuun oli Jako, jossa korttipelien säännöt piti ensin oivaltaa sanoiksi. Oli paljon sanoja, joille ei välttämättä ollut englanninkielistä vastinetta.
+          Kun yhteinen sanasto karttui niin jäi vähemmän tilaa arvauksille, ja arvaus on juuri se kohta jossa
           tekoäly menee vikaan. Väärinymmärrys maksaa aina enemmän kuin kielivalinta säästää.
-        </p>
-      </section>
-
-      <section aria-labelledby="tausta">
-        <h2 id="tausta">Tausta</h2>
-        <p>
-          Logica Suomi Oy 2000–2011, joista yhdeksän vuotta Java-kehitystä kuntien
-          rekisterijärjestelmien parissa. Prosessinhoitajan tutkinto 2014, AI Bootcamp
-          (Saranen) 2024. Palasin ohjelmointiin 2026 AI-avusteisella työtavalla.
-        </p>
-        <p>
-          Prosessityöstä jäi tapa jota käytän edelleen: virhe selvitetään loppuun asti ennen kuin
-          laitos käynnistetään uudelleen, eikä arvaus kelpaa selitykseksi. Sama toimii koodissa.
         </p>
       </section>
 

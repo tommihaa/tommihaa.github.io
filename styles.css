@@ -190,6 +190,12 @@ h2 {
   color: var(--text);
 }
 
+.why {
+  margin: 0 0 0.8rem;
+  color: var(--text);
+  line-height: 1.55;
+}
+
 .stack {
   margin: 0 0 0.9rem;
   font-size: 0.85rem;
