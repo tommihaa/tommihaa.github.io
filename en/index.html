@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tommi Haanranta</title>
+    <meta
+      name="description"
+      content="Three browser games in production. Claude Code writes the code; I decide what gets built, put the rules into words and reject what cannot be verified. Java background."
+    />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#f7f5f0" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1a1917" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="alternate" hreflang="fi" href="https://tommihaa.github.io/" />
+    <link rel="alternate" hreflang="en" href="https://tommihaa.github.io/en/" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Tommi Haanranta" />
+    <meta
+      property="og:description"
+      content="Three browser games in production, built with Claude Code. Java background."
+    />
+    <meta property="og:url" content="https://tommihaa.github.io/en/" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:locale:alternate" content="fi_FI" />
+    <meta name="twitter:card" content="summary" />
+  </head>
+  <body>
+    <header class="hero">
+      <p class="lang"><a href="../" hreflang="fi" lang="fi">Suomeksi</a></p>
+      <p class="eyebrow">Developer, Java background, AI-assisted</p>
+      <h1>Tommi Haanranta</h1>
+      <p class="lede">
+        Three browser games in production, and once opened they also work without an internet
+        connection. The genres are traditional card games, word building and a classic dice game.
+        Claude Code writes the code. I decide what gets built and what does not, put the rules
+        into words, read every change and reject what cannot be verified.
+      </p>
+    </header>
+
+    <main>
+      <section aria-labelledby="work">
+        <h2 id="work">Work</h2>
+        <p class="section-lede">
+          These games were learned at the table by playing them. I think game culture is worth
+          preserving, so I started these projects and saw them through. Now groups with nobody to
+          explain the rules can learn and play them too. The first three are online, free and
+          ad-free. Click and try. The DG Android app is available to testers.
+        </p>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Jako</h3>
+            <p class="what">Nine traditional card games in the browser, against computer opponents.</p>
+            <p class="why">I learned five of the nine in a group that played every day. The richness of card games lies in local rules, so there is no single correct version, only variants to choose from. The default settings were chosen for playability.</p>
+            <p class="stack">React · JavaScript · Vite · Vercel</p>
+            <ul class="facts">
+              <li>The computer opponents' levels were measured by letting the computer play against itself, 400 games for each pair of levels</li>
+              <li>The measurement showed that in two games the level makes no difference to the outcome. The player is told so, instead of being promised a difference that does not exist</li>
+            </ul>
+            <p class="links">
+              <a href="https://tommi-jako.vercel.app">Try it</a>
+              <a href="https://github.com/tommihaa/Jako/blob/main/docs/BOTBENCH.md">Measurements (in Finnish)</a>
+              <a href="https://github.com/tommihaa/Jako">Code</a>
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Itu</h3>
+            <p class="what">A word-building game in Finnish.</p>
+            <p class="why">It is modelled on a letter dice game where sand running through an hourglass measured each turn. Itu gives bonus points for using nearly all the letters before time runs out. There was no dictionary at the table: whether a word counted was settled by a shared sense of the language. When you play alone there is nobody to argue with, so in Itu the judge is the official word list of the Institute for the Languages of Finland (Kotus).</p>
+            <p class="stack">TypeScript · Vite · Vercel</p>
+            <ul class="facts">
+              <li>The word list and its inflected forms are compressed to fit in the browser, so no server is needed</li>
+              <li>Scoring, word checking and the compression of the word list are covered by automated tests, which run before every change is saved</li>
+            </ul>
+            <p class="links">
+              <a href="https://tommi-itu.vercel.app">Try it</a>
+              <a href="https://github.com/tommihaa/Itu">Code</a>
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Superjatsi</h3>
+            <p class="what">A dice game with five or six dice.</p>
+            <p class="why">For the all-round player of the classic five-dice scoring game. The six-dice version is rarely played at the table, and now it is available. A game takes about 20 minutes.</p>
+            <p class="stack">Web Components · TypeScript · Vercel</p>
+            <ul class="facts">
+              <li>The scoring rules are covered by automated tests, and two of them play 500 games through and check that the rules do not contradict each other</li>
+              <li>Built with the browser's own tools, without a UI library</li>
+            </ul>
+            <p class="links">
+              <a href="https://tommi-superjatsi.vercel.app">Try it</a>
+              <a href="https://github.com/tommihaa/Superjatsi">Code</a>
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>DG Android</h3>
+            <p class="what">An Android app for the DailyGammon backgammon service.</p>
+            <p class="why">DailyGammon is not played against the clock: you have days for each move and a tournament can last years. The app is made for that rhythm. It reminds you of moves waiting for you and keeps the match conversation, which the service deletes as soon as a message has been read.</p>
+            <p class="stack">Kotlin · Jetpack Compose</p>
+            <ul class="facts">
+              <li>Reading the service's pages is separated from the app into its own module, so it is tested against saved pages without a phone or an emulator</li>
+            </ul>
+            <p class="links">
+              <a href="https://tommihaa.github.io/dg-android/">Join the test</a>
+              <a href="https://github.com/tommihaa/dg-android">Code</a>
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="approach">
+        <h2 id="approach">How I work</h2>
+        <ul class="facts">
+          <li><strong>I measure before I claim.</strong> A first experiment of 30 games showed three clear difficulty levels in the card games. A larger experiment of 400 games overturned it, so I did not promise a feature that did not exist.</li>
+          <li><strong>I also report what did not work.</strong> A null result is information just like a success, and hiding it costs more later.</li>
+          <li><strong>I take in outside code only when it pays off.</strong> Every library is a promise someone else can break with an update, so I weigh each one separately.</li>
+          <li><strong>I say where information comes from.</strong> If I do not know, I leave the item blank rather than guess.</li>
+          <li><strong>I reduce loss in communication.</strong> The more precisely I say what I mean, the less room there is for guessing. That applies equally to specification, naming and directing AI.</li>
+        </ul>
+
+        <p class="disclosure">
+          I write these projects with Claude Code. It is not a chat window you paste code into but
+          an agent that reads the whole repository, edits files, runs the tests and commits. A work
+          session is a conversation with it: I say what I want and why, it proposes and
+          implements, and I read, ask and reject. When the same rule comes up a third time, it is
+          written into the project's instruction file, which the agent reads at the start of every
+          session. The way of working is itself versioned: rules, game specifications and rejected
+          ideas are in git just like the code, for example Jako's
+          <a href="https://github.com/tommihaa/Jako/blob/main/CLAUDE.md">instruction file</a> and
+          <a href="https://github.com/tommihaa/Jako/blob/main/docs/BOTBENCH.md"
+            >measurement log</a
+          >, which records for every experiment what was tested, how many times and what followed.
+          Both are in Finnish. If you wonder whether work done this way stands up to scrutiny, do
+          not take my word for it but read them.
+        </p>
+
+        <p class="disclosure">
+          I work with the AI in Finglish, Finnish mixed with English technical terms. It started
+          with Jako, where the rules of the card games first had to be put into words. Many of
+          those words had no obvious English counterpart. As our shared vocabulary grew, less room
+          was left for guessing, and guessing is exactly where AI goes wrong. A misunderstanding
+          always costs more than the choice of language saves.
+        </p>
+      </section>
+
+      <section aria-labelledby="contact">
+        <h2 id="contact">Contact</h2>
+        <p>
+          I welcome enquiries and job offers. Tell me freely what you have in mind and I will
+          reply.
+        </p>
+        <p class="contact">
+          <a href="mailto:no.jopas@gmail.com">no.jopas@gmail.com</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        This page is made by hand: two HTML files (Finnish and English) and one stylesheet. No
+        build tools, no JavaScript, no outside services. The
+        <a href="https://github.com/tommihaa/tommihaa.github.io">page's code</a>
+        can be read in full.
+      </p>
+    </footer>
+  </body>
+</html>
