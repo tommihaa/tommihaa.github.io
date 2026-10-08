@@ -38,6 +38,11 @@
   p, li { margin: 0 0 .75rem; }
   ul, ol { padding-left: 1.25rem; }
   .meta { color: var(--muted); margin-bottom: 1.5rem; }
+  figure { margin: 1rem 0 1.5rem; }
+  figure img { display: block; width: 100%; height: auto; border: 1px solid var(--rule); border-radius: 6px; }
+  .pair { display: flex; gap: .75rem; }
+  .pair picture { flex: 1; }
+  figcaption { color: var(--muted); font-size: .9rem; margin-top: .4rem; }
   footer { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid var(--rule); color: var(--muted); }
 </style>
 </head>
@@ -47,6 +52,17 @@
 <p class="meta">An unofficial DailyGammon client for Android<br>Closed test on Google Play, October 2026</p>
 
 <p>DG Android is a free app for playing on dailygammon.com from an Android phone or tablet. Before Google lets a new developer publish, an app has to run for a while in a closed test with real testers. That is where it is now. If you play DailyGammon on Android, you can be one of them: use the app instead of the browser for a couple of weeks and say what is missing.</p>
+
+<figure>
+<picture><source srcset="kuvat/tabletti-2-lauta-tumma.webp" media="(prefers-color-scheme: dark)"><img src="kuvat/tabletti-2-lauta-vaalea.webp" alt="A match on a tablet, Walnut board" width="1400" height="787" loading="lazy"></picture>
+</figure>
+<figure>
+<div class="pair">
+<picture><source srcset="kuvat/puhelin-1-luettelo-tumma.webp" media="(prefers-color-scheme: dark)"><img src="kuvat/puhelin-1-luettelo-vaalea.webp" alt="The match list on a phone" width="720" height="1280" loading="lazy"></picture>
+<picture><source srcset="kuvat/puhelin-4-inbox-tumma.webp" media="(prefers-color-scheme: dark)"><img src="kuvat/puhelin-4-inbox-vaalea.webp" alt="A conversation in the Inbox on a phone" width="720" height="1280" loading="lazy"></picture>
+</div>
+<figcaption>A tablet board, the match list and the Inbox. Player names and messages are made up for these pictures.</figcaption>
+</figure>
 
 <h2>Why it exists</h2>
 <p>DailyGammon does not save match messages. Once you have read one on the site, it is gone. The app saves both sides of the chat on your device before showing it, so the conversation stays with you. The archive can be exported to a file, backed up to a file and imported again. A message or a whole conversation can be deleted; it waits in Recently deleted for 30 days, where Restore brings it back.</p>
