@@ -44,7 +44,7 @@
         <p class="section-lede">
           Pelit on opittu pöydän ääressä pelaten. Koen pelikulttuurin säilyttämisen arvoiseksi, joten aloitin ja projektit pääsivät maaliin. Nyt niitä saavat opetella ja pelata myös peliporukat, joilla ei ole ketään selittämässä
           sääntöjä. Kolme ensimmäistä ovat verkossa, ilmaisia ja mainoksettomia. Klikkaa ja kokeile.
-          DG Android -sovellus on ladattavissa testaajille.
+          DG Android -sovellus on ladattavissa testaajille. Lausu syntyi pelien ruudunlukijatuesta.
         </p>
 
         <div class="grid">
@@ -105,6 +105,21 @@
             <p class="links">
               <a href="https://tommihaa.github.io/dg-android/">Liity testiin</a>
               <a href="https://github.com/tommihaa/dg-android">Koodi</a>
+            </p>
+          </article>
+          <article class="card">
+            <h3>Lausu</h3>
+            <p class="what">NVDA-ruudunlukijan lisäosa, joka lukee suomen luvut ja lyhenteet oikein taivutettuina.</p>
+            <p class="why">Kun tein peleihin ruudunlukijatukea, puheääni taivutti numeroita väärin: "2:lle" kuului "kaksille". Englannissa luku luetaan samoin lauseesta riippumatta, mutta suomessa sen muoto riippuu sijamuodosta. Lausu kirjoittaa luvut ja lyhenteet auki ennen kuin teksti menee puheäänelle, joten se toimii minkä tahansa suomenkielisen äänen kanssa.</p>
+            <p class="stack">Python · NVDA · Kotlin</p>
+            <ul class="facts">
+              <li>Kokeilussa kaksi suomenkielistä puheääntä luki kolmestatoista hankalasta kohdasta oikein neljä ilman Lausua ja kaikki kolmetoista Lausun kanssa</li>
+              <li>Jos sääntö ei tunnista tapausta varmasti, teksti jää ennalleen. Säännöillä on testit myös tapauksille, joihin ne eivät saa koskea</li>
+              <li>Android-versio toimii omana puhemoottorinaan TalkBackin ja puheäänen välissä, ja se on vielä kokeiluvaiheessa</li>
+            </ul>
+            <p class="links">
+              <a href="https://github.com/tommihaa/Lausu/releases/latest">Lataa NVDA:lle</a>
+              <a href="https://github.com/tommihaa/Lausu">Koodi</a>
             </p>
           </article>
         </div>
