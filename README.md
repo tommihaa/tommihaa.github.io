@@ -3,7 +3,7 @@
 Henkilökohtainen portfolio-sivusto, näkyy osoitteessa <https://tommihaa.github.io/>.
 
 Tässä repossa on kolme käsin kirjoitettua sivua ilman buildia, JavaScriptiä, riippuvuuksia
-tai ulkoisia pyyntöjä. Pelit ja sovellukset ovat omissa repoissaan, ja portfolio linkittää
+tai ulkoisia pyyntöjä. Pelit ja sovellukset ovat omissa repoissaan ja portfolio linkittää
 niihin. Repon sivut:
 
 - `index.html`: portfolio suomeksi.
