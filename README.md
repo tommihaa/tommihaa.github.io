@@ -1,10 +1,18 @@
 # tommihaa.github.io
 
-Henkilökohtainen portfolio-sivu, näkyy osoitteessa <https://tommihaa.github.io/>.
+Henkilökohtainen portfolio-sivusto, näkyy osoitteessa <https://tommihaa.github.io/>.
 
-Yksi sivu, käsin kirjoitettu: `index.html` ja `styles.css`. Ei buildia, ei JavaScriptiä,
-ei riippuvuuksia eikä ulkoisia pyyntöjä. Sivun ensimmäinen väite on että riippuvuus on
-velka, joten build-putki kumoaisi sen ennen ensimmäistä projektia.
+Kolme käsin kirjoitettua sivua ilman buildia, JavaScriptiä, riippuvuuksia tai ulkoisia
+pyyntöjä:
+
+- `index.html`: portfolio suomeksi.
+- `en/index.html`: sama englanniksi. Kieliversiot linkittävät toisiinsa ja kertovat
+  toisistaan `hreflang`-merkinnöillä.
+- `dg-android/index.html`: DG Android -sovelluksen suljetun testin liittymisohje
+  (englanniksi). Kuvakaappaukset ovat kansiossa `dg-android/kuvat/`.
+
+Portfolion kieliversiot jakavat tyylit (`styles.css`) ja ikonin (`favicon.svg`).
+Testisivulla on omat tyylit sivun sisällä.
 
 `.nojekyll` estää Jekyll-käsittelyn, joka muuten ajettaisiin oletuksena ja toisi
 templaattimoottorin ilman että sitä valittiin.
