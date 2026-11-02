@@ -47,7 +47,8 @@
           preserving, so I started these projects and saw them through. Now groups with nobody to
           explain the rules can learn and play them too. The first three are online, free and
           ad-free. Click and try. The DG Android app is available to testers. Lausu grew out of the
-          games' screen reader support.
+          games' screen reader support. Anti-Backgammon is my own backgammon variant and it is
+          online too.
         </p>
 
         <div class="grid">
@@ -123,6 +124,23 @@
             <p class="links">
               <a href="https://github.com/tommihaa/Lausu/releases/latest">Download for NVDA</a>
               <a href="https://github.com/tommihaa/Lausu">Code</a>
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Anti-Backgammon</h3>
+            <p class="what">A backgammon variant where the first player to leave the game gets a penalty point. Played in the browser against a neural network.</p>
+            <p class="why">Board, dice and moves are ordinary backgammon, but the goal is to stay on the board longer than your opponent. The rules were worked out with Claude Code one question at a time, and each of them is my decision. I know backgammon well enough to tell a good game from a bad one, so the design does not rest on AI guesswork.</p>
+            <p class="stack">JavaScript · neural network · GitHub Pages</p>
+            <ul class="facts">
+              <li>The computer opponent is a neural network trained by playing against itself and on a stronger network's evaluations</li>
+              <li>After each of your moves the page shows how far it fell short of the network's best move, along with the network's top three moves</li>
+              <li>There are no comparable bots, so the network's strength has no point of comparison. The game will soon be ready for other players to test</li>
+              <li>The page has no build step and no dependencies. The game, the network and the analysis run in the browser</li>
+            </ul>
+            <p class="links">
+              <a href="https://tommihaa.github.io/anti-backgammon-play/">Play</a>
+              <a href="https://github.com/tommihaa/anti-backgammon-play">Code</a>
             </p>
           </article>
         </div>
